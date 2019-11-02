@@ -5,11 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
-
+import React from "react"
 import { rhythm } from "../utils/typography"
+import SocialLinks from "./socialLinks"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -36,31 +36,33 @@ const Bio = () => {
 
   const { author, shortName, livingCountry, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
+    <div style={{ marginBottom: rhythm(2.5) }}>
+      <div
         style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
+          display: `flex`,
         }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
+      >
+        <Image
+          fixed={data.avatar.childImageSharp.fixed}
+          alt={author}
+          style={{
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
+            minWidth: 50,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `50%`,
+          }}
+        />
+        <p>
+          My name is {shortName}, and I’m 🇱🇻-born introvert, software developer
+          and videogame nerd, currenly living and working in {livingCountry}.
+          {` `}
+        </p>
+      </div>
       <p>
-        My name is {shortName}, and I’m 🇱🇻-born introvert, software developer
-        and videogame nerd, currenly living and working in {livingCountry}.{` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        <SocialLinks />
       </p>
     </div>
   )
