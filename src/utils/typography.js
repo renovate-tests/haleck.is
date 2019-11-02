@@ -1,6 +1,5 @@
 import Typography from "typography"
 import deYoungTheme from "typography-theme-de-young"
-import "./globalStyle.css"
 
 //delete deYoungTheme.googleFonts
 

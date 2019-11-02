@@ -58,7 +58,6 @@ const Bio = () => {
         <p>
           My name is {shortName}, and I’m 🇱🇻-born introvert, software developer
           and videogame nerd, currenly living and working in {livingCountry}.
-          {` `}
         </p>
       </div>
       <p>
