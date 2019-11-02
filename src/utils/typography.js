@@ -1,7 +1,13 @@
 import Typography from "typography"
 import deYoungTheme from "typography-theme-de-young"
 
-//delete deYoungTheme.googleFonts
+const defaultColor = "#596dcf"
+
+deYoungTheme.overrideThemeStyles = ({ rhythm }, options) => ({
+  a: {
+    color: defaultColor,
+  },
+})
 
 const typography = new Typography(deYoungTheme)
 
@@ -13,3 +19,4 @@ if (process.env.NODE_ENV !== `production`) {
 export default typography
 export const rhythm = typography.rhythm
 export const scale = typography.scale
+export const mainColor = defaultColor
