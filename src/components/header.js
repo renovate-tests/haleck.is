@@ -20,7 +20,7 @@ class Header extends React.Component {
             </Link>
           </h4>
           <h4 style={style.navigationTitle.text}>
-            <Link style={style.navigationTitle.link} to={`/`}>
+            <Link style={style.navigationTitle.link} to={`/bio`}>
               Bio
             </Link>
           </h4>

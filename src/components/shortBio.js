@@ -34,7 +34,7 @@ const ShortBio = () => {
     }
   `)
 
-  const { author, shortName, livingCountry, social } = data.site.siteMetadata
+  const { author, shortName, livingCountry } = data.site.siteMetadata
   return (
     <div style={{ marginBottom: rhythm(2.5) }}>
       <div
