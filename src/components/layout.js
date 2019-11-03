@@ -17,7 +17,7 @@ const headerStyle = {
   marginBottom: 0,
 }
 
-const headerContainerStyle = {
+const genericContainerStyle = {
   marginLeft: rhythm(1),
   marginRight: rhythm(1),
 }
@@ -33,7 +33,7 @@ const footerStyle = {
 const style = {
   content: contentStyle,
   header: headerStyle,
-  headerContainer: headerContainerStyle,
+  genericContainer: genericContainerStyle,
   footer: footerStyle,
 }
 
@@ -44,11 +44,13 @@ class Layout extends React.Component {
     return (
       <div>
         <header style={style.header}>
-          <div style={style.headerContainer}>
+          <div style={style.genericContainer}>
             <Header title={title} />
           </div>
         </header>
-        <main style={style.content}>{children}</main>
+        <main style={style.content}>
+          <div style={style.genericContainer}>{children}</div>
+        </main>
         <footer style={style.footer}>
           © {new Date().getFullYear()}, Built with
           {` `}

@@ -11,7 +11,7 @@ import React from "react"
 import { rhythm } from "../utils/typography"
 import SocialLinks from "./socialLinks"
 
-const Bio = () => {
+const ShortBio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
@@ -45,15 +45,8 @@ const Bio = () => {
         <Image
           fixed={data.avatar.childImageSharp.fixed}
           alt={author}
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            minWidth: 50,
-            borderRadius: `100%`,
-          }}
-          imgStyle={{
-            borderRadius: `50%`,
-          }}
+          style={style.avatar}
+          imgStyle={style.avatarImage}
         />
         <p>
           My name is {shortName}, and I’m 🇱🇻-born introvert, software developer
@@ -67,4 +60,17 @@ const Bio = () => {
   )
 }
 
-export default Bio
+const avatarStyle = {
+  marginRight: rhythm(1 / 2),
+  marginBottom: 0,
+  minWidth: 50,
+  borderRadius: "100%",
+}
+
+const avatarImageStyle = {
+  borderRadius: "50%",
+}
+
+const style = { avatar: avatarStyle, avatarImage: avatarImageStyle }
+
+export default ShortBio

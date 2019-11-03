@@ -24,5 +24,5 @@ if (process.env.NODE_ENV !== `production`) {
 export default typography
 export const rhythm = typography.rhythm
 export const scale = typography.scale
-export const primaryColor = primaryColor
-export const secondaryColor = secondaryColor
+export const primaryColor = primaryColorConst
+export const secondaryColor = secondaryColorConst
