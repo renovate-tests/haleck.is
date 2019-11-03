@@ -49,7 +49,6 @@ const mainTitleStyle = {
     boxShadow: `none`,
     textDecoration: `none`,
     color: `inherit`,
-    hover: "#",
   },
 }
 

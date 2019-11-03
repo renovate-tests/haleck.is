@@ -16,11 +16,7 @@ class SocialLinks extends React.Component {
               style={[style.socialLink]}
               key={s.kind}
             >
-              <FontAwesomeIcon
-                icon={s.icon}
-                color="var(--gray)"
-                title={`Link to my ${s.kind}`}
-              />
+              <FontAwesomeIcon icon={s.icon} title={`My ${s.kind}`} />
             </a>
           </div>
         ))}

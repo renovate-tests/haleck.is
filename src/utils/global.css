@@ -1,0 +1,9 @@
+body {
+  background-color: var(--bg);
+  background-image: url("../../content/assets/background.svg");
+  background-size: auto;
+  background-position: right top;
+  background-attachment: fixed;
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+}

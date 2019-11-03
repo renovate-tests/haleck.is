@@ -28,6 +28,7 @@ const footerStyle = {
   marginRight: `auto`,
   maxWidth: rhythm(40),
   marginBottom: rhythm(1),
+  fontSize: 16,
 }
 
 const style = {
@@ -52,9 +53,7 @@ class Layout extends React.Component {
           <div style={style.genericContainer}>{children}</div>
         </main>
         <footer style={style.footer}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()}, Artjoms Haleckis
         </footer>
       </div>
     )

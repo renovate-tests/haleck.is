@@ -1,5 +1,6 @@
 import Typography from "typography"
 import deYoungTheme from "typography-theme-de-young"
+import "./global.css"
 
 const primaryColorConst = "#596dcf"
 const secondaryColorConst = "#33cc33"
@@ -13,6 +14,10 @@ deYoungTheme.overrideThemeStyles = ({ rhythm }, options) => ({
     textDecoration: "none",
   },
 })
+
+const root = document.documentElement
+root.style.setProperty("--primaryColor", primaryColorConst)
+root.style.setProperty("--secondaryColor", secondaryColorConst)
 
 const typography = new Typography(deYoungTheme)
 
