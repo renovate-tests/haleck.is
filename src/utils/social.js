@@ -4,6 +4,7 @@ import {
   faLinkedin,
   faMedium,
   faTelegram,
+  faGoodreads,
 } from "@fortawesome/free-brands-svg-icons"
 
 export default [
@@ -13,14 +14,19 @@ export default [
     url: "https://github.com/crazyjooe",
   },
   {
-    kind: "Twitter",
-    icon: faTwitter,
-    url: "https://twitter.com/crazyjooe",
+    kind: "Goodreads",
+    icon: faGoodreads,
+    url: "https://www.goodreads.com/user/show/72052674-artjoms-haleckis",
   },
   {
     kind: "LinkedIn",
     icon: faLinkedin,
     url: "https://www.linkedin.com/in/haleckis/",
+  },
+  {
+    kind: "Twitter",
+    icon: faTwitter,
+    url: "https://twitter.com/crazyjooe",
   },
   {
     kind: "Medium",

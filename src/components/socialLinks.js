@@ -10,7 +10,12 @@ class SocialLinks extends React.Component {
       <div style={style.container}>
         {SOCIAL.map(s => (
           <div style={style.socialElement}>
-            <a href={s.url} style={[style.socialLink]} key={s.kind}>
+            <a
+              href={s.url}
+              target="_blank"
+              style={[style.socialLink]}
+              key={s.kind}
+            >
               <FontAwesomeIcon
                 icon={s.icon}
                 color="var(--gray)"
