@@ -10,13 +10,32 @@ const contentStyle = {
 }
 
 const headerStyle = {
-  marginLeft: rhythm(1),
   marginTop: rhythm(1),
-  marginRight: rhythm(1),
+  marginLeft: `auto`,
+  marginRight: `auto`,
+  maxWidth: rhythm(40),
   marginBottom: 0,
 }
 
-const style = { content: contentStyle, header: headerStyle }
+const headerContainerStyle = {
+  marginLeft: rhythm(1),
+  marginRight: rhythm(1),
+}
+
+const footerStyle = {
+  marginTop: rhythm(1),
+  marginLeft: `auto`,
+  marginRight: `auto`,
+  maxWidth: rhythm(40),
+  marginBottom: rhythm(1),
+}
+
+const style = {
+  content: contentStyle,
+  header: headerStyle,
+  headerContainer: headerContainerStyle,
+  footer: footerStyle,
+}
 
 class Layout extends React.Component {
   render() {
@@ -25,10 +44,12 @@ class Layout extends React.Component {
     return (
       <div>
         <header style={style.header}>
-          <Header title={title} />
+          <div style={style.headerContainer}>
+            <Header title={title} />
+          </div>
         </header>
         <main style={style.content}>{children}</main>
-        <footer>
+        <footer style={style.footer}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
