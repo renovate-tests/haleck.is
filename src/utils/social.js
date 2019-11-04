@@ -7,7 +7,7 @@ import {
   faGoodreads,
 } from "@fortawesome/free-brands-svg-icons"
 
-export default [
+const socialNetworks = [
   {
     kind: "GitHub",
     icon: faGithub,
@@ -39,3 +39,10 @@ export default [
     url: "https://t.me/crazyjooe",
   },
 ]
+
+function socialUrlForKind(kind) {
+  return socialNetworks.find(o => o.kind == kind).url
+}
+
+export default socialNetworks
+export { socialUrlForKind }

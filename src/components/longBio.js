@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import userInterval from "@use-it/interval"
 import ShortBio from "./shortBio"
-import SOCIAL from "../utils/social"
+import { socialUrlForKind } from "../utils/social"
 import { rhythm } from "../utils/typography"
 
 function getAge(dateOfBirth) {
@@ -9,13 +9,17 @@ function getAge(dateOfBirth) {
   return (msDiff / 31556952000).toFixed(8)
 }
 
+function getMyCurrentAge() {
+  return getAge(new Date(1990, 12, 2))
+}
+
 const LongBio = () => {
-  const [age, setAge] = useState(28)
+  const [age, setAge] = useState(getMyCurrentAge)
 
   userInterval(updateAgeState, 300)
 
   function updateAgeState() {
-    setAge(getAge(new Date(1990, 12, 2)))
+    setAge(getMyCurrentAge)
   }
 
   return (
@@ -30,7 +34,7 @@ const LongBio = () => {
         diving into JavaScript and React right now, while also helping to build
         React Native team in our company. You can learn more about the projects
         I participated in by visiting my{" "}
-        <a href="https://www.linkedin.com/in/haleckis/" target="_blank">
+        <a href={socialUrlForKind("LinkedIn")} target="_blank">
           LinkedIn
         </a>{" "}
         profile.
@@ -41,7 +45,7 @@ const LongBio = () => {
         this. I believe that knowing, understanding and accepting yourself is
         the key to success. My psychological type introduces some challenging
         situations on a daily basis, while also giving me some nice bonuses, and
-        by mastering my own Powers and weaknesses I'm able both to work in a
+        by mastering my own powers and weaknesses I'm able both to work in a
         team and to lead one. You can learn more about living as an HSP and
         introvert{" "}
         <a href="https://hsperson.com/" target="_blank">
@@ -50,13 +54,22 @@ const LongBio = () => {
         .
       </p>
       <p>
-        <span role="img">📚</span>I enjoy reading and listening to audiobooks. I
-        believe that reading is one of the most beneficial way of spending your
-        free time (while listening to audiobooks can be a perfect compliment to
-        walking or any physical activities). I'm a huge sci-fi fan, and my
-        favorite fiction author is Brandon Sanderson. It's possible to check
-        what I'm currently reading or my book ratings/reviews in the best social
-        network created by human kind.
+        <span role="img">📚</span> I enjoy reading and listening to audiobooks.
+        I believe that reading is one of the most beneficial ways of spending
+        your free time (while listening to audiobooks can be a perfect
+        complement to walking or any physical activities). I'm a huge sci-fi
+        fan, and my favorite fiction author is{" "}
+        <a
+          href="https://www.goodreads.com/author/show/38550.Brandon_Sanderson"
+          target="_blank"
+        >
+          Brandon Sanderson
+        </a>
+        . It's possible to check what I'm currently reading or my book
+        ratings/reviews in the{" "}
+        <a href={socialUrlForKind("Goodreads")} target="_blank">
+          the best social network created by humankind.
+        </a>
       </p>{" "}
       <p>
         <span role="img">🎮</span>I LOVE videogames. It's something I've been
