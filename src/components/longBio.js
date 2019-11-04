@@ -6,13 +6,13 @@ import { rhythm } from "../utils/typography"
 
 function getAge(dateOfBirth) {
   var msDiff = Date.now() - dateOfBirth.getTime()
-  return (msDiff / 31556952000).toFixed(10)
+  return (msDiff / 31556952000).toFixed(8)
 }
 
 const LongBio = () => {
   const [age, setAge] = useState(28)
 
-  userInterval(updateAgeState, 100)
+  userInterval(updateAgeState, 300)
 
   function updateAgeState() {
     setAge(getAge(new Date(1990, 12, 2)))
@@ -25,24 +25,29 @@ const LongBio = () => {
       <p>
         <span role="img">💻</span> I do mobile software development for a
         living. Working in the industry since 2010, I was able to work with
-        Maemo, Meego, Android, iOS and currently I'm iOS developer at Pipedrive.
-        Because I like learning something new all the time, I'm diving into
-        JavaScript and React right now, while also helping to build React Native
-        team in our company. You can learn more about projects I participated in
-        by visiting my{" "}
+        Maemo, Meego, Android, iOS and currently I'm an iOS developer at
+        Pipedrive. Because I like learning something new all the time, I'm
+        diving into JavaScript and React right now, while also helping to build
+        React Native team in our company. You can learn more about the projects
+        I participated in by visiting my{" "}
         <a href="https://www.linkedin.com/in/haleckis/" target="_blank">
           LinkedIn
         </a>{" "}
         profile.
       </p>
       <p>
-        <span role="img">😳</span> I am HSP/introvert. You can learn more about
-        living as an HSP and introvert HERE. It took me a while to identify
-        myself and learn what does it mean and how to live with this. I believe
-        that knowing, understanding and accepting yourself is the key to
-        success. My psychotype introduces some challenging situations on a daily
-        basis, while also giving me some nice bonuses, and by mastering my own
-        Powers and weaknesses I'm able both to work in a team and to lead one.
+        <span role="img">😳</span> I am HSP/introvert. It took me a while to
+        identify myself fully and learn what does it mean and how to live with
+        this. I believe that knowing, understanding and accepting yourself is
+        the key to success. My psychological type introduces some challenging
+        situations on a daily basis, while also giving me some nice bonuses, and
+        by mastering my own Powers and weaknesses I'm able both to work in a
+        team and to lead one. You can learn more about living as an HSP and
+        introvert{" "}
+        <a href="https://hsperson.com/" target="_blank">
+          here
+        </a>
+        .
       </p>
       <p>
         <span role="img">📚</span>I enjoy reading and listening to audiobooks. I
