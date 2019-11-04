@@ -15,9 +15,11 @@ deYoungTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   },
 })
 
-const root = document.documentElement
-root.style.setProperty("--primaryColor", primaryColorConst)
-root.style.setProperty("--secondaryColor", secondaryColorConst)
+if (typeof document !== `undefined`) {
+  const root = document.documentElement
+  root.style.setProperty("--primaryColor", primaryColorConst)
+  root.style.setProperty("--secondaryColor", secondaryColorConst)
+}
 
 const typography = new Typography(deYoungTheme)
 
