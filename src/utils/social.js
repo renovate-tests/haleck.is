@@ -41,7 +41,7 @@ const socialNetworks = [
 ]
 
 function socialUrlForKind(kind) {
-  return socialNetworks.find(o => o.kind == kind).url
+  return socialNetworks.find(o => o.kind === kind).url
 }
 
 export default socialNetworks

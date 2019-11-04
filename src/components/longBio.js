@@ -33,17 +33,11 @@ const LongBio = () => {
         the time, I'm diving into JavaScript and React right now, while also
         helping to build React Native team in our company. I was also amongst
         the people who the organized Latvian IT meetup and{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/DevTernity_Conference"
-          target="_blank"
-        >
+        <a href="https://en.wikipedia.org/wiki/DevTernity_Conference">
           one of the largest conferences in Baltics
         </a>
         . You can learn more about the projects I participated in by visiting my{" "}
-        <a href={socialUrlForKind("LinkedIn")} target="_blank">
-          LinkedIn
-        </a>{" "}
-        profile.
+        <a href={socialUrlForKind("LinkedIn")}>LinkedIn</a> profile.
       </p>
       <p>
         <span role="img">😳</span> I am HSP/introvert. It took me a while to
@@ -53,11 +47,7 @@ const LongBio = () => {
         situations on a daily basis, while also giving me some nice bonuses, and
         by mastering my own powers and weaknesses I'm able both to work in a
         team and to lead one. You can learn more about living as an HSP and
-        introvert{" "}
-        <a href="https://hsperson.com/" target="_blank">
-          here
-        </a>
-        .
+        introvert <a href="https://hsperson.com/">here</a>.
       </p>
       <p>
         <span role="img">📚</span> I enjoy reading and listening to audiobooks.
@@ -65,15 +55,12 @@ const LongBio = () => {
         your free time (while listening to audiobooks can be a perfect
         complement to walking or any physical activities). I'm a huge sci-fi
         fan, and my favorite fiction author is{" "}
-        <a
-          href="https://www.goodreads.com/author/show/38550.Brandon_Sanderson"
-          target="_blank"
-        >
+        <a href="https://www.goodreads.com/author/show/38550.Brandon_Sanderson">
           Brandon Sanderson
         </a>
         . It's possible to check what I'm currently reading or my book
         ratings/reviews in the{" "}
-        <a href={socialUrlForKind("Goodreads")} target="_blank">
+        <a href={socialUrlForKind("Goodreads")}>
           the best social network created by humankind.
         </a>
       </p>{" "}
@@ -84,10 +71,7 @@ const LongBio = () => {
         of movies, because I believe that videogames can be the perfect
         replacement for these activities. While it's incredibly hard to name the
         one game I'm loving the most, I always name{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/Another_World_(video_game)"
-          target="_blank"
-        >
+        <a href="https://en.wikipedia.org/wiki/Another_World_(video_game)">
           Another World
         </a>{" "}
         as one, since I've beaten it too many times. It's not only the state of
@@ -103,10 +87,7 @@ const LongBio = () => {
       </p>
       <p>
         <span role="img">🎲</span>{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/Magic:_The_Gathering"
-          target="_blank"
-        >
+        <a href="https://en.wikipedia.org/wiki/Magic:_The_Gathering">
           Magic: The Gathering
         </a>{" "}
         became a huge part of my life some time ago. I never expected this game
@@ -118,7 +99,7 @@ const LongBio = () => {
       <p>
         <span role="img">🐱</span> ...Oh, and I love cats! Did you know that,
         despite the popular opinion,{" "}
-        <a href="https://doi.org/10.1016/j.beproc.2017.03.016" target="_blank">
+        <a href="https://doi.org/10.1016/j.beproc.2017.03.016">
           they love you too?
         </a>
       </p>

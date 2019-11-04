@@ -1,7 +1,7 @@
+import { graphql } from "gatsby"
 import React from "react"
-import { Link, graphql } from "gatsby"
-import LongBio from "../components/longBio"
 import Layout from "../components/layout"
+import LongBio from "../components/longBio"
 import SEO from "../components/seo"
 
 class Bio extends React.Component {
