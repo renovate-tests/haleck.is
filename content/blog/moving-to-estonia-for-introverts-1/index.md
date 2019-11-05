@@ -8,7 +8,7 @@ keywords: []
 
 ### **Intro**
 
-My name is Artjoms and I’m an iOS developer at [Pipedrive](https://www.pipedrive.com/en/jobs) and [DevTernity](https://devternity.com?r=Y2NyYXp5Lmpqb2VAZ21haWwuY29t) conference organiser. I have moved to Estonia recently and want to share my journey in a series of small posts.
+My name is Artjoms and I’m an iOS developer at [Pipedrive](https://www.pipedrive.com/en/jobs). I have moved to Estonia recently and want to share my journey in a series of small posts.
 
 There are already lots of relocation guides about moving to Estonia or any other country out there, which I, of course, used a lot in my relocation process. They usually focus more on practical relocation aspect, which is really nice and useful. But what I wanted to describe here is how my relocation process went on, while facing pure introvert problems, trying to share some of my findings and practices I have discovered during this life changing journey.
 

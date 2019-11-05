@@ -79,8 +79,9 @@ First of all, you should plan your packing for few last days. Don’t do this ea
 
 Second, you don’t need this thing! And this. But what about that thing? [NO](http://gph.is/1maiw0M)! People usually overrate the amount of clothes and items they need for their daily life. Be minimalistic. Take only what you really need — you can buy other stuff later when you have already moved in. You will start realizing what you are really missing in your daily life step by step.
 
-![I’m pretty sure you don’t need this old tire in your life. Then why would you need all that trash you decided to take with you?](img/1__lwzKLpp__RaSV8J__ElK6PnA.jpeg)
-I’m pretty sure you don’t need this old tire in your life. Then why would you need all that trash you decided to take with you?
+![I’m pretty sure you don’t need this old tire in your life. Then why would you need all that trash you decided to take with you?](img/tire.jpeg)
+
+> _I’m pretty sure you don’t need this old tire in your life. Then why would you need all that trash you decided to take with you?_
 
 So — take the minimum of your stuff and buy everything you need later. You will be surprised about a number of your precious belongings that you will never miss.
 
@@ -98,4 +99,4 @@ Don’t forget to download offline maps for the area you will arrive to — 
 
 ### Settling in
 
-[Next blog post](https://medium.com/@artjoms.haleckis/moving-to-estonia-guide-for-introverts-part-3-70f5c40ace9c) covers settling in process, apartment renting and first baby steps after relocating.
+[Next blog post](/moving-to-estonia-for-introverts-3) covers settling in process, apartment renting and first baby steps after relocating.
