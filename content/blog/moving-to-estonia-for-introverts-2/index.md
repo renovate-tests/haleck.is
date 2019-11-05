@@ -90,7 +90,7 @@ And now, the time has come. You get in the car/bus/train/plane and start your jo
 
 But for those who have less experience in this, I would recommend making some basic preparations that will make your trip easier. First — grab some books or audiobooks with you. Music is great and you should have it available for offline listening as well, but having a book with you will help to be distracted and avoid bad thoughts during the trip. Besides making you a smarter person, of course!
 
-![Reading is a great and useful distraction. Your mind won’t have time to panic while you are reading!](img/pelgu.jpeg)
+![Reading is a great and useful distraction. Your mind won’t have time to panic while you are reading!](img/reading.jpeg)
 
 > _Reading is a great and useful distraction. Your mind won’t have time to panic while you are reading!_
 
