@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import { rhythm } from "../utils/typography"
+import Logo from "./logo"
 
 class Header extends React.Component {
   render() {
@@ -10,6 +11,7 @@ class Header extends React.Component {
       <div style={style.mainContainer}>
         <h3 style={style.mainTitle.text}>
           <Link style={style.mainTitle.link} to={`/`}>
+            <Logo />
             {title}
           </Link>
         </h3>
@@ -49,6 +51,10 @@ const mainTitleStyle = {
     boxShadow: `none`,
     textDecoration: `none`,
     color: `inherit`,
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
 }
 

@@ -1,9 +1,59 @@
 body {
-  background-color: var(--bg);
   background-image: url("../../content/assets/background.svg");
   background-size: auto;
   background-position: right top;
   background-attachment: fixed;
   background-clip: padding-box;
   background-repeat: no-repeat;
+}
+
+.logo_outer,
+.logo_inner {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.logo_container {
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_outer {
+  border: 6px solid var(--primaryColor);
+  border-right-color: transparent;
+  -webkit-animation: rotation 200s infinite linear;
+  width: 36px;
+  height: 36px;
+}
+
+.logo_inner {
+  border: 4px solid var(--secondaryColor);
+  border-left-color: transparent;
+  -webkit-animation: rotation 180s infinite linear;
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+}
+
+@media only screen and (max-width: 480px) {
+  .logo_outer {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logo_inner {
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }

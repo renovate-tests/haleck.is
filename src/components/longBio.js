@@ -9,7 +9,7 @@ function getAge(dateOfBirth) {
 }
 
 function getMyCurrentAge() {
-  return getAge(new Date(1990, 12, 2))
+  return getAge(new Date(1990, 2, 12))
 }
 
 const LongBio = () => {
