@@ -78,4 +78,4 @@ Of course, you have to weigh out your decision, taking all the circumstances and
 
 … and deal with it!
 
-In the [next blog post](https://medium.com/@artjoms.haleckis/moving-to-estonia-guide-for-introverts-part-2-59ceccdc87e4), I describe how I prepared for the relocation and tried (not always successfully) to manage the stress caused by my decision.
+In the [next blog post](/moving-to-estonia-for-introverts-2), I describe how I prepared for the relocation and tried (not always successfully) to manage the stress caused by my decision.
