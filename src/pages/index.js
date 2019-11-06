@@ -21,7 +21,6 @@ class BlogIndex extends React.Component {
           return (
             <article key={node.fields.slug}>
               <hr></hr>
-              {node.frontmatter.categories}
               <header>
                 <h1
                   style={{
@@ -72,7 +71,6 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            categories
           }
         }
       }
