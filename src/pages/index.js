@@ -20,6 +20,8 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article key={node.fields.slug}>
+              <hr></hr>
+              {node.frontmatter.categories}
               <header>
                 <h1
                   style={{
@@ -30,7 +32,10 @@ class BlogIndex extends React.Component {
                     {title}
                   </Link>
                 </h1>
-                <small>{node.frontmatter.date}</small>
+                <small>
+                  {node.frontmatter.date} {"\u2022"} {node.timeToRead} min to
+                  read
+                </small>
               </header>
               <section>
                 <p
@@ -60,6 +65,7 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
+          timeToRead
           fields {
             slug
           }
@@ -67,6 +73,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            categories
           }
         }
       }
