@@ -2,7 +2,7 @@ import Typography from "typography"
 import deYoungTheme from "typography-theme-de-young"
 import "./global.css"
 
-const primaryColorConst = "#596dcf"
+const primaryColorConst = "#5E46A4"
 const secondaryColorConst = "#33cc33"
 
 deYoungTheme.overrideThemeStyles = ({ rhythm }, options) => ({
