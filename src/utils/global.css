@@ -7,6 +7,10 @@ body {
   background-repeat: no-repeat;
 }
 
+small {
+  color: var(--supportColor);
+}
+
 .logo_outer,
 .logo_inner {
   display: inline-block;

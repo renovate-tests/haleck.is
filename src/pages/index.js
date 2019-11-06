@@ -33,8 +33,7 @@ class BlogIndex extends React.Component {
                   </Link>
                 </h1>
                 <small>
-                  {node.frontmatter.date} {"\u2022"} {node.timeToRead} min to
-                  read
+                  {node.frontmatter.date} {"\u2022"} {node.timeToRead} min read
                 </small>
               </header>
               <section>

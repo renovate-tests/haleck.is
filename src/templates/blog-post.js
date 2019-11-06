@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import ShortBio from "../components/shortBio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm, scale, supportColor } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -20,45 +20,20 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
-              {post.frontmatter.title}
-            </h1>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-            >
-              {post.frontmatter.date}
+            <h1 style={style.header}>{post.frontmatter.title}</h1>
+            <p style={style.subtitle}>
+              {post.frontmatter.date} {"\u2022"} {post.timeToRead} min read
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          />
+          <hr style={style.bottomLine} />
           <footer>
             <ShortBio />
           </footer>
         </article>
 
         <nav>
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
+          <ul style={style.bottomNavigationList}>
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">
@@ -80,6 +55,37 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
+const headerStyle = {
+  marginTop: rhythm(1),
+  marginBottom: 0,
+}
+
+const subtitleStyle = {
+  ...scale(-1 / 5),
+  display: `block`,
+  marginBottom: rhythm(1),
+  color: supportColor,
+}
+
+const bottomLineStyle = {
+  marginBottom: rhythm(1),
+}
+
+const bottomNavigationListStyle = {
+  display: `flex`,
+  flexWrap: `wrap`,
+  justifyContent: `space-between`,
+  listStyle: `none`,
+  padding: 0,
+}
+
+const style = {
+  header: headerStyle,
+  subtitle: subtitleStyle,
+  bottomLine: bottomLineStyle,
+  bottomNavigationList: bottomNavigationListStyle,
+}
+
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
@@ -99,6 +105,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
       }
+      timeToRead
     }
   }
 `

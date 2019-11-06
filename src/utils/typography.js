@@ -4,6 +4,7 @@ import "./global.css"
 
 const primaryColorConst = "#5E46A4"
 const secondaryColorConst = "#33cc33"
+const supportColorConst = "#b3b3cc"
 
 deYoungTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   a: {
@@ -19,6 +20,7 @@ if (typeof document !== `undefined`) {
   const root = document.documentElement
   root.style.setProperty("--primaryColor", primaryColorConst)
   root.style.setProperty("--secondaryColor", secondaryColorConst)
+  root.style.setProperty("--supportColor", supportColorConst)
 }
 
 const typography = new Typography(deYoungTheme)
@@ -33,3 +35,4 @@ export const rhythm = typography.rhythm
 export const scale = typography.scale
 export const primaryColor = primaryColorConst
 export const secondaryColor = secondaryColorConst
+export const supportColor = supportColorConst

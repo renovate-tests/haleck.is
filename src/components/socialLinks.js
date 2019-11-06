@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
-import { rhythm, primaryColor } from "../utils/typography"
+import { rhythm, primaryColor, supportColor } from "../utils/typography"
 import SOCIAL from "../utils/social"
 import Radium from "radium"
 
@@ -31,7 +31,7 @@ const socialElementStyle = {
 }
 
 const socialLinkStyle = {
-  color: "#b3b3cc",
+  color: supportColor,
   textDecoration: "none",
   ":hover": { textDecoration: "none", color: primaryColor },
 }
