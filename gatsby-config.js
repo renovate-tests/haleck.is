@@ -4,8 +4,8 @@ module.exports = {
     shortName: `Artjoms`,
     livingCountry: `🇪🇪`,
     author: `Artjoms Haleckis`,
-    description: `Artjoms Haleckis - Blog,
-    siteUrl: `https://www.haleck.is`,
+    description: `Artjoms Haleckis - Blog`,
+    siteUrl: `https://haleck.is`,
     social: {
       twitter: `crazyjooe`,
     },
