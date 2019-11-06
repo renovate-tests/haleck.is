@@ -4,8 +4,8 @@ module.exports = {
     shortName: `Artjoms`,
     livingCountry: `🇪🇪`,
     author: `Artjoms Haleckis`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Artjoms Haleckis - Blog,
+    siteUrl: `https://www.haleck.is`,
     social: {
       twitter: `crazyjooe`,
     },
