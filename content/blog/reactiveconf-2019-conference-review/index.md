@@ -40,9 +40,9 @@ Pipedrive’s Prague office (it’s also a company I work in right now but in Ta
 
 It all ended in the Pipedrive office with beers, pizza, and quiz. I really enjoyed how this was organized and atmosphere and vibe during office after-party were awesome!
 
-![Pipedrive afterparty server local food and drinks <3](img/pipedrive.jpeg)
+![Pipedrive afterparty served local food and drinks <3](img/pipedrive.jpeg)
 
-> _Pipedrive afterparty server local food and drinks <3_
+> _Pipedrive afterparty served local food and drinks <3_
 
 ### Content
 
