@@ -4,6 +4,7 @@ description: Mental preparation and making a decision
 date: "2017-08-20T10:16:50.794Z"
 categories: []
 keywords: []
+seoImage: img/meditation.jpeg
 ---
 
 ### **Intro**

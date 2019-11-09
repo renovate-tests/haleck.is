@@ -18,6 +18,7 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          imageURL={post.frontmatter.seoImage.absolutePath}
         />
         <article>
           <header>
@@ -117,6 +118,9 @@ export const pageQuery = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+        }
+        seoImage {
+          absolutePath
         }
       }
       timeToRead

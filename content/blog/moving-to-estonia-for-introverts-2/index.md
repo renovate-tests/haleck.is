@@ -4,6 +4,7 @@ description: Physical preparation
 date: "2017-09-02T10:50:50.042Z"
 categories: []
 keywords: []
+seoImage: img/coffee.jpeg
 ---
 
 ### Reality

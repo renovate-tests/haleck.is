@@ -5,6 +5,7 @@ date: "2018-09-16T13:01:05.773Z"
 categories: []
 keywords: []
 previewImage: img/tree.jpeg
+seoImage: img/tree.jpeg
 ---
 
 > “Life is awesome! Every single bit of it, at this exact moment.

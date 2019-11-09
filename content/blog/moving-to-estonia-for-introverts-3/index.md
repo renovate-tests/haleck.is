@@ -4,6 +4,7 @@ description: Settling in
 date: "2018-01-28T19:34:00.912Z"
 categories: []
 keywords: []
+seoImage: img/bike.jpeg
 ---
 
 ### So this is it
