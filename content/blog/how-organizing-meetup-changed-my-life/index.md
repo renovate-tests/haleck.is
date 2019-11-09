@@ -4,6 +4,7 @@ description: A short story about putting down your headphones
 date: "2018-01-29T21:32:06.082Z"
 categories: []
 keywords: []
+previewImage: img/devternity.jpeg
 ---
 
 For me, it all started in 2014. I entered ASKfm office kitchen and saw him. As usual, staying in the middle of the room, with shining eyes, chatting with someone about some cool stuff I usually didn’t even understand.
@@ -36,8 +37,6 @@ Team grew. Some people left, some joined — natural process of evolving tea
 And then it hits me again — of course, we should!
 
 Months passed, and I’m standing at the main stage at [LNB](https://www.lnb.lv), in front of a huge audience, at the end of the first [DevTernity](https://devternity.com) conference, which went insanely well for the first-timer. I’m afraid of being public, I don’t like that people are staring at me, but I don’t care. Most probably this is the only day in a year I don’t care.
-
-![](img/devternity.jpeg)
 
 It’s hard to describe this feeling with words, it truly is. You get injected with energy booster somehow, even though your body is depleted from running, talking with people, and solving problems. You can feel it when you try to sleep that night — but you can’t. And the next day it’s still there. And in a month.
 

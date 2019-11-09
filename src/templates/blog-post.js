@@ -5,6 +5,7 @@ import ShortBio from "../components/shortBio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale, supportColor } from "../utils/typography"
+import Image from "gatsby-image"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -20,6 +21,12 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
+            {post.frontmatter.previewImage && (
+              <Image
+                fluid={post.frontmatter.previewImage.childImageSharp.fluid}
+                alt={post.frontmatter.title}
+              />
+            )}
             <h1 style={style.header}>{post.frontmatter.title}</h1>
             <p style={style.subtitle}>
               {post.frontmatter.date} {"\u2022"} {post.timeToRead} min read
@@ -104,6 +111,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        previewImage {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       timeToRead
     }

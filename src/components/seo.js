@@ -10,10 +10,17 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, imageURL }) {
   const { site } = useStaticQuery(
     graphql`
       query {
+        avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
+          childImageSharp {
+            fixed(width: 50, height: 50) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
         site {
           siteMetadata {
             title
@@ -52,6 +59,10 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: imageURL,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -67,6 +78,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:image`,
+          content: imageURL,
+        },
       ].concat(meta)}
     />
   )
@@ -76,6 +91,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  imageURL: `content\assets\profile-pic-large.jpg`,
 }
 
 SEO.propTypes = {
