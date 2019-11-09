@@ -65,8 +65,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Artjoms Haleckis - Blog`,
+        short_name: `halec.is`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
