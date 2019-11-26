@@ -11,6 +11,8 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
+    const siteURL = this.props.data.site.siteMetadata.siteUrl
+    const publicImageURL = post.frontmatter.seoImage.publicURL
     const { previous, next } = this.props.pageContext
 
     return (
@@ -18,7 +20,7 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          imageURL={post.frontmatter.seoImage.publicURL}
+          imageURL={siteURL + publicImageURL}
         />
         <article>
           <header>
@@ -102,6 +104,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
