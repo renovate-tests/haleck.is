@@ -120,7 +120,7 @@ export const pageQuery = graphql`
           }
         }
         seoImage {
-          absolutePath
+          publicURL
         }
       }
       timeToRead
