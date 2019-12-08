@@ -48,7 +48,7 @@ const ShortBio = () => {
           style={style.avatar}
           imgStyle={style.avatarImage}
         />
-        <p>
+        <p style={style.text}>
           My name is {shortName}, and I’m 🇱🇻-born introvert, software developer
           and videogame nerd, currenly living and working in {livingCountry}.
         </p>
@@ -71,6 +71,14 @@ const avatarImageStyle = {
   borderRadius: "50%",
 }
 
-const style = { avatar: avatarStyle, avatarImage: avatarImageStyle }
+const textStyle = {
+  fontSize: "90%",
+}
+
+const style = {
+  avatar: avatarStyle,
+  avatarImage: avatarImageStyle,
+  text: textStyle,
+}
 
 export default ShortBio
