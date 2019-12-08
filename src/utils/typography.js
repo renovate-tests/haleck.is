@@ -23,6 +23,8 @@ if (typeof document !== `undefined`) {
   root.style.setProperty("--supportColor", supportColorConst)
 }
 
+deYoungTheme.baseFontSize = 24
+
 const typography = new Typography(deYoungTheme)
 
 // Hot reload typography in development.
