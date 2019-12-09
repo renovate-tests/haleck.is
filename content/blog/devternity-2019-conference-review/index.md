@@ -76,8 +76,8 @@ I was amazed by how diverse the crowd was this year. It felt that people from al
 - Every conflict is always good guy vs. good guy, not good guy vs. bad guy.
 - We don't know our capacity and spend time on useless crap a lot. Knowing your capacity and not letting yourself be overloaded with work leads to great achievements.
 - 2-minute rule - if something takes you 2 minutes or less, do it right now instead of postponing it.
-- We all have a limited amount of keystrokes(or any way to express ourselves) left in our lives. Try not to waste them, share useful information and ditch social media distractions.
-- You only need one person reading your blog to double your keystrokes.
+- We all have a [limited amount of keystrokes](https://keysleft.com/) (or any way to express ourselves) left in our lives. Try not to waste them, share useful information and ditch social media distractions.
+- **You only need one person reading your blog to double your keystrokes**.
 
 The last one hit me hard. I did overcome my internal fears some time ago and started writing texts to share with others without much caring how many people will read them. But hitting 50 or 100 reads is already amazing! And when some posts hit more than 2k reads, just trying to imagine a room full of 2000 people that you potentially helped or motivated somehow makes me feel pumped.
 
