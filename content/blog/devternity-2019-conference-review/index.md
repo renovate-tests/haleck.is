@@ -55,13 +55,13 @@ Being more and more interested and involved in not only development but also lea
 
 It’s hard to imagine any other conference in Riga to gather this amount of gold speakers under the same roof, and the motivational charge the one can get during the talks is skyrocketing. Since all talks are long and breaks between them are relatively short, the one conference day turns into a non-stop action that makes you both tired and happy at the same time. I tend to compare this year’s DevTernity with high-quality training at the gym - you feel exhausted in the end, but the benefit and dopamine level makes you feel soo damn good anyway! I never had so many notes from the conference, and I still feel this energy charge I got during this one day.
 
-Here is my list of TOP-5 talks in no particular order (I will add links to videos once they are published):
+Here is my list of TOP-5 talks in no particular order:
 
-- **Roy Osherove** - The Coaching Architect Manifesto
-- **David Neal** - Leadership Guide for the Reluctant Leader
-- **Scott Hanselman** - Scaling Yourself
-- **Kevlin Henney** - Lean code
-- **J.B. Rainsberger** - The Well-Balanced Programmer
+- [**Roy Osherove** - The Coaching Architect Manifesto](https://youtu.be/XgAJyC5keU0)
+- [**David Neal** - Leadership Guide for the Reluctant Leader](https://youtu.be/3PcL8UkorEg)
+- [**Scott Hanselman** - Scaling Yourself](https://youtu.be/V4NJo2Mfvrc)
+- [**Kevlin Henney** - Lean code](https://youtu.be/-nWhH-4wWBU)
+- [**J.B. Rainsberger** - The Well-Balanced Programmer](https://youtu.be/XhN6fJYG81A)
 
 ### People
 
