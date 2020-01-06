@@ -10,6 +10,7 @@ import Image from "gatsby-image"
 import React from "react"
 import { rhythm } from "../utils/typography"
 import SocialLinks from "./socialLinks"
+import Emoji from "./emoji"
 
 const ShortBio = () => {
   const data = useStaticQuery(graphql`
@@ -34,7 +35,12 @@ const ShortBio = () => {
     }
   `)
 
-  const { author, shortName, livingCountry } = data.site.siteMetadata
+  const {
+    author,
+    shortName,
+    livingCountry,
+    livingCountryLabel,
+  } = data.site.siteMetadata
   return (
     <div style={{ marginBottom: rhythm(2.5) }}>
       <div
@@ -49,8 +55,10 @@ const ShortBio = () => {
           imgStyle={style.avatarImage}
         />
         <p style={style.text}>
-          My name is {shortName}, and I’m 🇱🇻-born introvert, software developer
-          and videogame nerd, currenly living and working in {livingCountry}.
+          My name is {shortName}, and I’m <Emoji symbol="🇱🇻" label="Latvia" />
+          -born introvert, software developer and videogame nerd, currenly
+          living and working in{" "}
+          <Emoji symbol={livingCountry} label={livingCountryLabel} />.
         </p>
       </div>
       <p>

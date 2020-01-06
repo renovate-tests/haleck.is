@@ -3,6 +3,7 @@ module.exports = {
     title: `haleck.is`,
     shortName: `Artjoms`,
     livingCountry: `🇪🇪`,
+    livingCountryLabel: `Estonia`,
     author: `Artjoms Haleckis`,
     description: `Artjoms Haleckis - Blog`,
     siteUrl: `https://haleck.is`,

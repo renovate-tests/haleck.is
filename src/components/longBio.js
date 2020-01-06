@@ -2,6 +2,7 @@ import userInterval from "@use-it/interval"
 import React, { useState } from "react"
 import { socialUrlForKind } from "../utils/social"
 import ShortBio from "./shortBio"
+import Emoji from "./emoji"
 
 function getAge(dateOfBirth) {
   var msDiff = Date.now() - dateOfBirth.getTime()
@@ -26,13 +27,13 @@ const LongBio = () => {
       <ShortBio />
       <p>I'm {age} years old right now.</p>
       <p>
-        <span role="img">💻</span> I do mobile software development for a
-        living. Working in the industry since 2010, I was able to develop
-        software for Maemo, Meego, Android, iOS and currently I'm an iOS/React
-        Native developer at Pipedrive. Because I like learning something new all
-        the time, I'm diving into JavaScript and React right now, while also
-        helping to build React Native team in our company. I was also amongst
-        the people who the organized Latvian IT meetup and{" "}
+        <Emoji symbol="💻" /> I do mobile software development for a living.
+        Working in the industry since 2010, I was able to develop software for
+        Maemo, Meego, Android, iOS and currently I'm an iOS/React Native
+        developer at Pipedrive. Because I like learning something new all the
+        time, I'm diving into JavaScript and React right now, while also helping
+        to build React Native team in our company. I was also amongst the people
+        who the organized Latvian IT meetup and{" "}
         <a href="https://en.wikipedia.org/wiki/DevTernity_Conference">
           one of the largest conferences in Baltics
         </a>
@@ -40,21 +41,21 @@ const LongBio = () => {
         <a href={socialUrlForKind("LinkedIn")}>LinkedIn</a> profile.
       </p>
       <p>
-        <span role="img">😳</span> I am HSP/introvert. It took me a while to
-        identify myself fully and learn what does it mean and how to live with
-        this. I believe that knowing, understanding and accepting yourself is
-        the key to success. My psychological type introduces some challenging
-        situations on a daily basis, while also giving me some nice bonuses, and
-        by mastering my own powers and weaknesses I'm able both to work in a
-        team and to lead one. You can learn more about living as an HSP and
-        introvert <a href="https://hsperson.com/">here</a>.
+        <Emoji symbol="😳" /> I am HSP/introvert. It took me a while to identify
+        myself fully and learn what does it mean and how to live with this. I
+        believe that knowing, understanding and accepting yourself is the key to
+        success. My psychological type introduces some challenging situations on
+        a daily basis, while also giving me some nice bonuses, and by mastering
+        my own powers and weaknesses I'm able both to work in a team and to lead
+        one. You can learn more about living as an HSP and introvert{" "}
+        <a href="https://hsperson.com/">here</a>.
       </p>
       <p>
-        <span role="img">📚</span> I enjoy reading and listening to audiobooks.
-        I believe that reading is one of the most beneficial ways of spending
-        your free time (while listening to audiobooks can be a perfect
-        complement to walking or any physical activities). I'm a huge sci-fi
-        fan, and my favorite fiction author is{" "}
+        <Emoji symbol="📚" />I enjoy reading and listening to audiobooks. I
+        believe that reading is one of the most beneficial ways of spending your
+        free time (while listening to audiobooks can be a perfect complement to
+        walking or any physical activities). I'm a huge sci-fi fan, and my
+        favorite fiction author is{" "}
         <a href="https://www.goodreads.com/author/show/38550.Brandon_Sanderson">
           Brandon Sanderson
         </a>
@@ -65,7 +66,7 @@ const LongBio = () => {
         </a>
       </p>{" "}
       <p>
-        <span role="img">🎮</span> I LOVE videogames. It's something I've been
+        <Emoji symbol="🎮" /> I LOVE videogames. It's something I've been
         obsessed with since early childhood and I'm sure that I'm going to be a
         gamer for my whole life. I'm not watching TV series and not seeing a lot
         of movies, because I believe that videogames can be the perfect
@@ -80,13 +81,13 @@ const LongBio = () => {
         around it, which is very inspiring.
       </p>
       <p>
-        <span role="img">🧘‍♀️</span> Meditation and sports changed my life
-        recently, and since I discovered how they affect one's life, a mindful
-        and healthy lifestyle is something I try to actively embrace. Say no to{" "}
-        <span role="img">😡</span> and <span role="img">🥐</span>!
+        <Emoji symbol="🧘‍♀️" /> Meditation and sports changed my life recently,
+        and since I discovered how they affect one's life, a mindful and healthy
+        lifestyle is something I try to actively embrace. Say no to{" "}
+        <Emoji symbol="😡" /> and <Emoji symbol="🥐" />!
       </p>
       <p>
-        <span role="img">🎲</span>{" "}
+        <Emoji symbol="🎲" />{" "}
         <a href="https://en.wikipedia.org/wiki/Magic:_The_Gathering">
           Magic: The Gathering
         </a>{" "}
@@ -97,8 +98,8 @@ const LongBio = () => {
         happy about it!
       </p>
       <p>
-        <span role="img">🐱</span> ...Oh, and I love cats! Did you know that,
-        despite the popular opinion,{" "}
+        <Emoji symbol="🐱" /> ...Oh, and I love cats! Did you know that, despite
+        the popular opinion,{" "}
         <a href="https://doi.org/10.1016/j.beproc.2017.03.016">
           they love you too?
         </a>
