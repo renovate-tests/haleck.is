@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, imageURL }) {
+function SEO({ description, lang, meta, title, imageURL, keywords }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -40,58 +40,70 @@ function SEO({ description, lang, meta, title, imageURL }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={"%s | ${site.siteMetadata.title}"}
       meta={[
         {
-          name: `description`,
+          name: "description",
           content: metaDescription,
         },
         {
-          property: `og:title`,
+          property: "og:title",
           content: title,
         },
         {
-          property: `og:description`,
+          property: "og:description",
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: "og:type",
+          content: "website",
         },
         {
-          property: `og:image`,
+          property: "og:image",
           content: imageURL,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          name: "twitter:card",
+          content: "summary",
         },
         {
-          name: `twitter:creator`,
+          name: "twitter:creator",
           content: site.siteMetadata.author,
         },
         {
-          name: `twitter:title`,
+          name: "twitter:title",
           content: title,
         },
         {
-          name: `twitter:description`,
+          name: "twitter:description",
           content: metaDescription,
         },
         {
-          name: `twitter:image`,
+          name: "twitter:image",
           content: imageURL,
+        },
+        {
+          name: "keywords",
+          content: keywordsFromArray(keywords),
         },
       ].concat(meta)}
     />
   )
 }
 
+const defaultKeywords =
+  "Haleckis,Artjoms,Blog,haleck.is,Haleckij,Artjom,артём,халецкий,"
+
+function keywordsFromArray(keywords) {
+  return defaultKeywords + keywords.toString()
+}
+
 SEO.defaultProps = {
-  lang: `en`,
+  lang: "en",
   meta: [],
-  description: ``,
-  imageURL: `content\assets\profile-pic-large.jpg`,
+  description: "",
+  imageURL: "contentassetsprofile-pic-large.jpg",
+  keywords: defaultKeywords,
 }
 
 SEO.propTypes = {

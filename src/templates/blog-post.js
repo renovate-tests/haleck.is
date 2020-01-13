@@ -24,6 +24,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
           imageURL={siteURL + publicImageURL}
+          keywords={greenTags.concat(purpleTags)}
         />
         <article>
           <header>
