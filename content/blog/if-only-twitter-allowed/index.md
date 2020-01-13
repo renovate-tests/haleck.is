@@ -6,6 +6,8 @@ categories: []
 keywords: []
 previewImage: img/tree.jpeg
 seoImage: img/tree.jpeg
+greenTags: [Life, Mental]
+purpleTags: []
 ---
 
 > “Life is awesome! Every single bit of it, at this exact moment.

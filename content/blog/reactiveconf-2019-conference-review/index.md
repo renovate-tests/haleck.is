@@ -5,6 +5,8 @@ date: "2019-11-09T04:20:00.000Z"
 categories: []
 keywords: []
 seoImage: img/entrance.jpeg
+greenTags: [Conference, Learning]
+purpleTags: [Programming, React native]
 ---
 
 During my [last year's visit to UIKonf in Berlin](/uikonf-2018-conference-review) as an iOS developer, I couldn't imagine myself writing this kind of post in just a year, to be honest.

@@ -7,6 +7,8 @@ date: "2018-05-18T09:47:32.714Z"
 categories: []
 keywords: []
 seoImage: img/stage.jpeg
+greenTags: [Conference, Learning]
+purpleTags: [Programming, iOS]
 ---
 
 Attending conferences is an important part of being a software developer nowadays. Not only it’s a great way of educating yourself about particular topics, it’s also a chance to establish new connections and meet the community you are part of.

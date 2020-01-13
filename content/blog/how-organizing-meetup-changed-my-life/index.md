@@ -6,6 +6,8 @@ categories: []
 keywords: []
 previewImage: img/devternity.jpeg
 seoImage: img/devternity.jpeg
+greenTags: [Conference, Meetup, Comfort zone]
+purpleTags: [Programming]
 ---
 
 For me, it all started in 2014. I entered ASKfm office kitchen and saw him. As usual, staying in the middle of the room, with shining eyes, chatting with someone about some cool stuff I usually didn’t even understand.

@@ -5,6 +5,8 @@ date: "2017-09-02T10:50:50.042Z"
 categories: []
 keywords: []
 seoImage: img/coffee.jpeg
+greenTags: [Introverts, Comfort zone, Relocation]
+purpleTags: [Pipedrive]
 ---
 
 ### Reality

@@ -5,6 +5,8 @@ date: "2018-01-28T19:34:00.912Z"
 categories: []
 keywords: []
 seoImage: img/bike.jpeg
+greenTags: [Introverts, Comfort zone, Relocation, Estonia]
+purpleTags: [Pipedrive]
 ---
 
 ### So this is it

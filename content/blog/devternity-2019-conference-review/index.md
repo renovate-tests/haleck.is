@@ -5,6 +5,8 @@ date: "2019-12-08T04:20:00.000Z"
 categories: []
 keywords: []
 seoImage: img/riga.jpeg
+greenTags: [Conference, Learning, Leadership]
+purpleTags: [Programming]
 ---
 
 This one particular conference, this particular year, was something different and special to me. The thing is, it’s the fifth [DevTernity](https://devternity.com) that I’m attending, but it’s the first one where I’m not [part of the organizing team](/how-organizing-meetup-changed-my-life). After four years of challenging organization process, I decided to follow some other goals this year and attended as a regular unbias visitor. And oh boy, I enjoyed it so much!

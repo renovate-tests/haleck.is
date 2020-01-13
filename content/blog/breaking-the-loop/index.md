@@ -6,6 +6,8 @@ categories: []
 keywords: []
 previewImage: img/mental.jpg
 seoImage: img/mental.jpg
+greenTags: [Mental, Learning, Comfort zone]
+purpleTags: [iOS, React Native, Programming]
 ---
 
 Initially, this meant to be a simple technical post about my path from being just a native iOS developer to learning JS and React(Native). It actually still is. But it’s also about something else, so bear with me even if you have no clue what is iOS, JavaScript or software development in general.

@@ -5,6 +5,8 @@ date: "2017-08-20T10:16:50.794Z"
 categories: []
 keywords: []
 seoImage: img/meditation.jpeg
+greenTags: [Introverts, Comfort zone, Relocation, Meditation]
+purpleTags: [Pipedrive]
 ---
 
 ### **Intro**
