@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale, supportColor } from "../utils/typography"
 import Image from "gatsby-image"
+import Tags from "../components/tagList"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -14,6 +15,8 @@ class BlogPostTemplate extends React.Component {
     const siteURL = this.props.data.site.siteMetadata.siteUrl
     const publicImageURL = post.frontmatter.seoImage.publicURL
     const { previous, next } = this.props.pageContext
+    const greenTags = post.frontmatter.greenTags
+    const purpleTags = post.frontmatter.purpleTags
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -36,6 +39,9 @@ class BlogPostTemplate extends React.Component {
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <p>
+            <Tags purpleTags={purpleTags} greenTags={greenTags}></Tags>
+          </p>
           <hr style={style.bottomLine} />
           <footer>
             <ShortBio />
@@ -125,6 +131,8 @@ export const pageQuery = graphql`
         seoImage {
           publicURL
         }
+        greenTags
+        purpleTags
       }
       timeToRead
     }
