@@ -11,7 +11,7 @@ const GreenTag = props => <Tag style={greenTagStyle} text={props.text}></Tag>
 const PurpleTag = props => <Tag style={purpleTagStyle} text={props.text}></Tag>
 
 const tagStyle = {
-  borderRadius: "20%",
+  borderRadius: "5%",
   paddingLeft: 6,
   paddingRight: 6,
   backgroundColor: "WhiteSmoke",

@@ -5,13 +5,13 @@ const Tags = props => {
   return (
     <div style={tagListStyle}>
       {props.greenTags.map((item, idx) => (
-        <span style={{ paddingRight: 8, paddingBottom: 4 }}>
+        <span style={elementStyle}>
           <GreenTag text={item}></GreenTag>
         </span>
       ))}
 
       {props.purpleTags.map((item, idx) => (
-        <span>
+        <span style={elementStyle}>
           <PurpleTag text={item}></PurpleTag>
         </span>
       ))}
@@ -23,6 +23,11 @@ const tagListStyle = {
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "flex-start",
+}
+
+const elementStyle = {
+  paddingRight: 8,
+  paddingBottom: 4,
 }
 
 export default Tags
