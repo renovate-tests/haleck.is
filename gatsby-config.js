@@ -83,5 +83,12 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://haleck.us8.list-manage.com/subscribe/post?u=162ee34a22b4bc90703c5f00b&amp;id=2a25530ca5",
+      },
+    },
   ],
 }

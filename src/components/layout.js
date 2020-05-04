@@ -1,6 +1,7 @@
 import React from "react"
 import { rhythm } from "../utils/typography"
 import Header from "./header"
+import SubscribeForm from "./subscribe"
 
 const contentStyle = {
   marginLeft: `auto`,
@@ -31,11 +32,19 @@ const footerStyle = {
   fontSize: 16,
 }
 
+const subscribeStyle = {
+  marginTop: rhythm(2),
+  marginBottom: 0,
+  display: "flex",
+  justifyContent: "center",
+}
+
 const style = {
   content: contentStyle,
   header: headerStyle,
   genericContainer: genericContainerStyle,
   footer: footerStyle,
+  subscribe: subscribeStyle,
 }
 
 class Layout extends React.Component {
@@ -51,6 +60,9 @@ class Layout extends React.Component {
         </header>
         <main style={style.content}>
           <div style={style.genericContainer}>{children}</div>
+          <div style={style.subscribe}>
+            <SubscribeForm />
+          </div>
         </main>
         <footer style={style.footer}>
           © {new Date().getFullYear()}, Artjoms Haleckis

@@ -70,3 +70,32 @@ small {
     -webkit-transform: rotate(359deg);
   }
 }
+
+.subscribe_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe_input {
+  color: #2a2a2a;
+  width: 100%;
+  border-width: 0.05rem;
+  border-style: solid;
+  border-color: var(--supportColor);
+  padding-left: 0.5rem;
+}
+
+.subscribe_button {
+  border: none;
+  background-image: none;
+  background-color: var(--supportColor);
+  color: white;
+
+  letter-spacing: 1px;
+  transition: all 0.1s linear;
+}
+
+.subscribe_button:hover {
+  cursor: pointer;
+  background: var(--primaryColor);
+}
