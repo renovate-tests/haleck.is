@@ -5,8 +5,10 @@ const SubscribeForm = () => {
   const [email, setEmail] = useState("")
   const [successMessage, setSuccessMessage] = useState("")
   const [errorMessage, setErrorMessage] = useState("")
+  const [inputDisabled, setInputDisabled] = useState(false)
 
   const handleSubmit = (event) => {
+    setInputDisabled(true)
     setErrorMessage("")
     setSuccessMessage("")
 
@@ -16,6 +18,7 @@ const SubscribeForm = () => {
         if (data.result === "error") {
           setErrorMessage("Something went wrong")
           setSuccessMessage("")
+          setInputDisabled(false)
         } else {
           setSuccessMessage("All good, thanks for subscribing!")
           setErrorMessage("")
@@ -39,9 +42,10 @@ const SubscribeForm = () => {
           placeholder="Type your email"
           name="email"
           type="text"
+          disabled={inputDisabled}
           onChange={handleEmailChange}
         />
-        <button class="subscribe_button" type="submit">
+        <button class="subscribe_button" type="submit" disabled={inputDisabled}>
           Subscribe
         </button>
       </div>
